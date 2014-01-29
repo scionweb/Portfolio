@@ -3,27 +3,27 @@ body {
 	font-size: .8125em;
 	line-height: 1.3846em;
 	font-family: 'Noto Serif', serif;
-	background-image: url('../images/rockywall.png');
+	background-image: url('../images/pixel_weave.png');
 	background-attachment: fixed;
 	margin: 0;
 	padding: 0;		
 }
 
 #header {
-	background-image: url('../images/black_paper_@2x.png');
+	background-image: url('../images/grey_wash_wall.png');
 	position: fixed;
 	top: 0;
 	z-index: 1;
 	width: 100%;
-	color: #ccc;
+	color: #eee;
 	border-bottom: 1px solid #aaa;
-	padding-top: 10px;
+	/*padding-top: 10px;*/
 }
 
 	#header ul {
 		list-style: none;
 		margin-top: 0;
-		/*padding-top: 10px;*/
+		padding-top: 10px;
 
 	}
 
@@ -36,7 +36,7 @@ body {
 			}
 
 #folio {
-	background-color: #ffcb00;
+	/*background-color: #ffcb00;*/
 	color: #444;
 	padding-top: 44px;
 }
@@ -53,10 +53,10 @@ body {
 
 
 #about {
-	background-image: url('../images/wave-border3.png');
+	background-image: url('../images/wave-border4.png');
 	background-position: top;
 	background-repeat: repeat-x;				
-	background-color: #FFD73F;
+	/*background-color: #FFD73F;*/
 }
 
 	#folio a {
@@ -77,10 +77,10 @@ body {
 	}	
 
 #resume {
-	background-image: url('../images/puzzle-border2.png');
+	background-image: url('../images/puzzle-border3.png');
 	background-position: top;
 	background-repeat: repeat-x;
-	background-color: #ffcb00;
+	/*background-color: #ffcb00;*/
 	border-bottom: 1px solid #fff;
 }
 
@@ -152,12 +152,18 @@ body {
 .page {
 	margin: 0 auto;
 	padding: 0 10px;
-	background-color: rgba(255,255,255,.25);
+	background-color: rgba(255,255,255,.5);
 }
 
 	#resume > .page, #about > .page {
 		padding-top: 1em;
 	}
+
+.header {
+	margin: 0 auto;
+	padding: 0 10px;
+	background-color: rgba(255,255,255,.15);
+}
 
 .clearfix:after {
     content: ".";
@@ -217,7 +223,7 @@ h3, h4 {
 		line-height: 1.8;
 	}
 
-	.page {
+	.page, .header {
 		width: 48em;
 	}
 
@@ -240,6 +246,7 @@ ul#personal {
 	float:right;
 	padding: 0;
 	text-align: right;
+	padding-top: 10px;
 }
 
 	
