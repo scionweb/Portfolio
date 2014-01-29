@@ -1,0 +1,125 @@
+<html>
+<head>
+	<title>Voila - Style with Grace</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<script src="js/jQuery.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script type="text/javascript" src="scripts/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.carousel-1.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<LINK REL="SHORTCUT ICON" HREF="favicon.ico" />
+</head>
+
+<body>
+<div id = "container">
+<div id="blind"><!-- hide scrolling divs --></div>
+<div id = "header">
+	<h1 id="logo">VOILA</h1>
+	<h2 id="motto">streamline your look with style and <span class="red">grace</span></h2>
+	<div id="nav">
+	<ul>
+		<li><a href="#photo">Photography</a></li>
+		<li><a href="#movie">Movie Wardrobe</a></li>
+		<li><a href="#personal">Personal Stylist</a></li>
+		<li><a href="#album">Photo Album</a></li>
+		<li><a href="#contact">Contact Grace</a></li>		
+	</ul>
+	</div><!-- end Nav -->
+
+</div><!-- end Header -->
+<div id = "content">
+	<div class="focus photo">
+	<div id="photo" class="anchor"></div>
+	<h2>Photography Stylist</h2>
+	<h3>Are you a photographer searching for the right look for your next shoot?</h3>
+	<h3>Are you a model looking for a style that will make an impression?</h3>
+	<p>Whether you are a photographer searching for a stylist to find the right look for your next shoot, or a model looking for a style that will make an impression, Voila can help.</p>
+
+
+
+
+
+
+
+	</div><!--end Photo -->
+	
+	<div class="focus movie">
+	<div id="movie" class="anchor"></div>
+	<h2>Movie Stylist</h2>
+
+
+
+
+
+
+
+	</div><!--end Movie -->
+
+	<div class="focus personal">
+	<div id="personal" class="anchor"></div>
+	<h2>Personal Stylist</h2>
+
+
+
+
+
+	</div><!--end Personal -->
+
+
+
+
+	<div class="focus contact">
+	<div id="contact" class="anchor"></div>
+	<h2>Contact Information</h2>
+	<h3>Grace McDade</h3>
+	<br />
+	<h3>Phone: 978.430.9889</h3>
+	<!-- <br />
+	<h3>E-Mail: grace.voila@gmail.com</h3> -->
+	<br />
+	<a href="mailto:grace.voila@gmail.com"><img src="images/email.png"></a>
+	<a href="http://www.facebook.com/Voilagrace"><img src="images/facebook.png"></a>
+	<a href="http://www.linkedin.com/profile/view?id=49023747&locale=en_US&trk=tyah"><img src="images/linkedin.png"></a>
+	<br /><br />
+	<p>Please use this form if you would like Grace to contact you.</p>
+
+
+	<form id="contact_form" action="contact.html">
+		<input type='text' name='firstname' placeholder="First Name">*&nbsp
+		<input type='text' name='lastname' placeholder="Last Name">*
+		<br /><br />
+		<input type='text' name='email' placeholder="E-Mail Address">*
+		<br /><br />
+		<input type='text' name='phone' placeholder="Telephone Number">
+		<br /><br />
+		Which styling services are you interested in?<br />
+		<input type='checkbox' name='service' value='photog'> Photography (Photographer)<br />
+		<input type='checkbox' name='service' value='model'> Photography (Model)<br />
+		<input type='checkbox' name='service' value='movie'> Movie Wardrobe<br />
+		<input type='checkbox' name='service' value='personal'> Personal<br />
+		<br />
+		What do you feel you need help with?<br />
+		<textarea name='details' rows='5' cols='50'></textarea>
+		<br /><br />
+		When is the best time to reach you?<br />
+		<input type='radio' name='reach' value='morning'> Morning &nbsp
+		<input type='radio' name='reach' value='afternoon'> Afternoon &nbsp
+		<input type='radio' name='reach' value='evening'> Evening
+		<br /><br />
+		<input type="submit" value='&nbsp Send &nbsp' onclick="return isValid( this.form );">
+		<input type="reset" value='&nbsp Reset Form &nbsp'>
+	</form>
+
+
+	</div><!-- end Contact -->
+
+</div><!--end Content -->
+<div id = "footer">
+&copy; 2013 Voila
+</div><!--end Footer -- >
+
+
+</div><!--end Container -->
+</body>
+</html>

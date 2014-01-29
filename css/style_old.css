@@ -1,0 +1,269 @@
+body {
+	color: #444;
+	font-size: .8125em;
+	line-height: 1.3846em;
+	font-family: 'Noto Serif', serif;
+	background-image: url('../images/rockywall.png');
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;		
+}
+
+#header {
+	background-image: url('../images/black_paper_@2x.png');
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	color: #ccc;
+	border-bottom: 1px solid #aaa;
+}
+
+	#header ul {
+		list-style: none;
+		float: left;
+		margin-top: 0;
+		padding-top: 10px;
+
+	}
+
+		#header ul a {
+			color: #eee;
+		}
+
+			#header ul a:hover {
+				color: #FFD73F;
+			}
+
+	.personal {
+		padding: 10px;
+		text-align: right;
+	}
+
+		.personal a {
+			text-decoration: none;
+			color: #ccc;
+		}
+
+			.personal a:hover {
+				color: #FFD73F;
+			}
+
+#about {
+	background-color: #ffcb00;
+	color: #444;
+	padding-top: 25px;
+	/*padding-bottom: 20px;*/
+}
+
+	#about a {
+		color: #000;
+	}
+
+	.columns h3 {
+			font-size: 1.75em;
+	}
+
+
+
+
+#folio {
+	background-image: url('../images/wave-border3.png');
+	background-position: top;
+	background-repeat: repeat-x;				
+	background-color: #FFD73F;
+	/*color: #9B805A;*/
+}
+
+	#folio a {
+		color: #444;
+		text-decoration: none;
+	}
+
+		#folio a:hover {
+			text-shadow: 0 0 2px #FF9934;
+		}
+
+	.thumb {
+		float:left;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 25px;
+	}	
+
+#resume {
+	background-image: url('../images/puzzle-border2.png');
+	background-position: top;
+	background-repeat: repeat-x;
+	background-color: #ffcb00;
+	/*color: #2F2118;*/
+	border-bottom: 1px solid #fff;
+}
+
+	.label {
+		width: 24%;
+		float: left;
+	}
+
+	.info {
+		width: 76%;
+		float: left;
+	}
+
+	.info li {
+		margin-left: -20px;
+	}			
+
+	.label, .info {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box; /*<--This puts padding inside the div!*/
+		/*outline: 2px dotted black; <--Used for troubleshooting
+		outline-offset: -2px;*/
+		padding: 1em;
+	}
+
+	.divider {
+		clear: both;
+		border-bottom: 3px solid #2F2118;
+	}
+
+
+#footer {
+	text-align: center;
+	background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+	background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+	background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+	border-top: 1px solid #888;
+}
+
+	#footer img {
+		/*padding: 0 25px;*/
+
+	}
+
+	#footer img:hover {
+		-webkit-animation:imgrotate 5s; /* Safari and Chrome */
+		cursor: pointer;
+	}
+
+	.rotate {
+	    -webkit-transition-duration: 0.8s;
+	    -moz-transition-duration: 0.8s;
+	    -o-transition-duration: 0.8s;
+	    transition-duration: 0.8s;
+	     
+	    -webkit-transition-property: -webkit-transform;
+	    -moz-transition-property: -moz-transform;
+	    -o-transition-property: -o-transform;
+	    transition-property: transform;
+	}   
+ 
+	.rotate:hover { 
+	    -webkit-transform:rotatey(360deg);
+	    -moz-transform:rotatey(360deg); 
+	    -o-transform:rotatey(360deg);
+	}
+
+.page {
+	margin: 0 auto;
+	padding: 0 10px;
+	background-color: rgba(255,255,255,.25);
+}
+
+	#resume > .page, #folio > .page {
+		padding-top: 1em;
+	}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}						
+
+h2	{
+	font-family: 'Noto Sans', sans-serif;
+	padding-top: 1em;
+	font-size: 3em;
+	line-height: 1em;
+}
+
+h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+			
+
+@media screen and (min-width: 36em) {
+	
+	.thumb {
+		width: 50%;
+	}
+
+	#header ul {
+		float: none;
+		padding-bottom: 10px;
+	}
+
+	#header ul li {
+	float:left;
+	width: 30%;
+	text-align: center;
+	}
+	.personal {
+		text-align: center;
+	}
+
+	.personal h3 {
+		display: inline;
+		margin: 10px;
+	}
+
+	#footer img {
+		margin: 0 25px;
+	}
+
+	.columns {
+		-webkit-column-count: 2;
+		-webkit-column-gap: 3em;
+		-moz-column-count:2;
+		-moz-column-gap: 3em;
+		column-count: 2;
+		column-gap: 3em;
+	}
+
+		.columns p. h3 {
+			-webkit-margin-before: 0;
+			-webkit-margin-after: 2em;
+		}
+
+
+}
+
+
+
+@media screen and (min-width: 48em) {
+	body {	
+		font-size: 1em;
+		line-height: 1.8;
+	}
+
+	.page {
+		width: 48em;
+	}
+
+	.personal h3 {
+		margin: 0 25px;
+	}
+
+	#footer img {
+		margin: 0 50px;
+	}
+}
+
+
+
+	

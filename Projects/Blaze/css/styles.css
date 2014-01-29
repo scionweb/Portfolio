@@ -1,0 +1,579 @@
+@font-face {
+    font-family: 'FirecatMedium';
+    src: url('../fonts/FirecatMedium-webfont.eot');
+    src: url('../fonts/FirecatMedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FirecatMedium-webfont.woff') format('woff'),
+         url('../fonts/FirecatMedium-webfont.ttf') format('truetype'),
+         url('../fonts/FirecatMedium-webfont.svg#FirecatMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CommandoCommando';
+    src: url('../fonts/commando-webfont.eot');
+    src: url('../fonts/commando-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/commando-webfont.woff') format('woff'),
+         url('../fonts/commando-webfont.ttf') format('truetype'),
+         url('../fonts/commando-webfont.svg#CommandoCommando') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EraserRegular';
+    src: url('../fonts/EraserRegular-webfont.eot');
+    src: url('../fonts/EraserRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/EraserRegular-webfont.woff') format('woff'),
+         url('../fonts/EraserRegular-webfont.ttf') format('truetype'),
+         url('../fonts/EraserRegular-webfont.svg#EraserRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes myfirst
+{
+from {width: 40px;}
+to {width: 320px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {width: 40px;}
+to {width: 320px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {width: 40px;}
+to {width: 320px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {width: 40px;}
+to {width: 320px;}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	/*list-style: none;*/
+	/*border: none;*/
+}
+
+body {
+	background-image: url(../images/field-bg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #FD7E03; 
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 25px;
+	/*background: white;*/
+}
+
+#nav {
+	height: 50px;
+	margin-left: 275px;
+}
+
+#nav ul {
+	font-size: 20px;
+	list-style: none;
+}
+
+	#nav ul li {
+
+		float: left;
+		border-left: 2px solid black;
+	}
+
+		#nav ul li.home {
+			border-left: none;
+		}
+
+	#nav ul li a {
+		text-decoration: none;
+		padding: 10px 20px;
+		color: #FD7E03;
+		font-weight: bold;
+	}
+
+		#nav ul li a:hover {
+			background: url(../images/li-bg.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			color: black;
+			text-shadow: 0 0 5px red;
+		}
+
+#header {
+	height: 175px;
+	position: relative;
+	background-image: url(../images/bat.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+	#header img {
+		position: absolute;
+		left: -50px;
+		top: -75px;
+	}
+
+	#header h1 {
+		font-family: 'FirecatMedium';
+		font-size: 96px;
+		position: absolute;
+		right: 100px;
+		bottom: 20px;
+		color: #FFB400;
+		text-shadow: 0 0 25px red;
+	}
+
+	#header img.frontpage {
+		animation: myfirst 3s;
+		-moz-animation: myfirst 3s; /* Firefox */
+		-webkit-animation: myfirst 3s; /* Safari and Chrome */
+		-o-animation: myfirst 3s; /* Opera */
+	}
+
+	#header h2 {
+		font-family: 'CommandoCommando';
+		font-size: 84px;
+		position: absolute;
+		left: 325px;
+		top: 10px;
+	}
+
+#main {
+	/*background: rgba(255,255,255,.8);*/
+	min-height: 600px;
+	border-radius: 25px;
+	margin-top: 10px;
+}
+
+	#main h1 {
+		font-family: 'FirecatMedium';
+		font-size: 36px;
+		text-shadow: 0 0 10px orange;	
+	}
+
+
+	
+/* Front Page Divs */
+
+#fp-video {
+	float: left;
+	border: 2px solid black;
+	padding: 5px;
+	background: rgba(255,255,255,.8);
+	width: 620px;
+	height: 443px;
+}
+
+	#fp-video h2 {
+		/*text-align: center;*/
+	}
+
+	#main a {
+			text-decoration: none;
+			color: black;
+		}
+
+			#main a:hover {
+				text-decoration: underline;
+			}
+
+#fp-headlines {
+	position: relative;
+	float: right;
+	border: 2px solid black;
+	height: 443px;
+	width: 300px;
+	padding: 5px;
+	background: rgba(200,200,200,.8);
+}
+
+	#fp-headlines ul {
+		list-style: disc;
+		margin-left: 20px;
+		font-size: 18px;
+	}
+
+		#fp-headlines ul li {
+			padding: 10px 0;
+		}
+
+		#fp-headlines a {
+			text-decoration: none;
+			color: black;
+		}
+
+			#fp-headlines a:hover {
+				text-decoration: underline;
+			}
+
+	.articles {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		padding: 2px 5px;
+	}
+.fp-cta {
+	position: relative;
+	float: left;
+	width: 299px;
+	border: 2px solid black;
+	padding: 5px;
+	background: rgba(200,200,200,.8);
+	height: 385px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+	.fp-cta img {
+		margin-left: 9px;
+
+	}
+
+.fp-cta-right {
+	position: relative;
+	float: left;
+	width: 300px;
+	border: 2px solid black;
+	padding: 5px;
+	background: rgba(200,200,200,.8);
+	height: 385px;
+	margin-top: 20px;
+}
+
+	.fp-cta-right p {
+		line-height: 48px;
+	}
+
+
+/* Roster Page Divs */
+
+.player {
+	margin: 5px;
+	border: 5px solid black;
+
+}
+
+	.player img {
+			margin: 10px;
+			float: left;
+			border: 1px solid black;
+	}	
+
+	.player h2 {
+		
+		padding-right: 10px;
+	}
+
+	.player p {
+		font-size: 18px;
+	}
+
+.bio {
+	float: right;
+	border: 1px solid black;
+	background: rgba(255,255,255,.8);
+	width: 303px;
+	height: 320px;
+	margin: 10px;
+	padding: 5px;
+}
+
+
+.stats {
+	margin: 10px;
+	border: 1px solid black;
+	height: 80px;
+	background: rgba(255,255,255,.8);
+}
+
+	.stats table {
+
+	}
+
+	.stats table tr th {
+		border: 0;
+		background: #ccc;
+	}
+
+	.stats table td {
+		text-align: center;
+	}
+
+/* Coaches Divs */
+
+.coachbio {
+	float: left;
+	border: 1px solid black;
+	background: rgba(255,255,255,.8);
+	width: 638px;
+	height: 320px;
+	margin: 10px 0 10px 10px;
+	padding: 5px;
+}
+
+/* Schedule Divs */
+
+#calendar {
+
+}
+
+	#calendar ul {
+		width: 50%;
+		list-style: none;
+	}
+
+		
+		#calendar ul li {
+			float: left;
+			width: 33%;
+			text-align: center;
+			font-family: "CommandoCommando";
+			font-size: 36px;
+		}
+
+
+
+		#calendar ul li a:hover {
+			text-decoration: none;
+			color: red;
+			text-shadow: 0 0 5px #FFB400;
+		}
+
+		.current {
+			color: #FFB400;
+			text-shadow: 0 0 5px red;
+			text-decoration: underline;
+		}
+
+
+
+.day {
+	float: left;
+	width: 110px;
+	height: 25px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "CommandoCommando";
+	text-shadow: 0 0 2px orange;
+}
+
+.no-date {
+	float: left;
+	width: 110px;
+	height: 25px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.game {
+	float: left;
+	position: relative;
+	width: 110px;
+	height: 100px;
+	margin: 5px;
+	padding: 5px;
+	background: white;
+}
+
+.gamehome {
+	float: left;
+	position: relative;
+	width: 110px;
+	height: 100px;
+	margin: 5px;
+	padding: 5px;
+	background: red;
+	color: white;
+}
+
+.gameaway {
+	float: left;
+	position: relative;
+	width: 110px;
+	height: 100px;
+	margin: 5px;
+	padding: 5px;
+	background: grey;
+	color: black;
+}
+
+	.gdate {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		padding: 5px;
+		font-size: 18px;
+	}
+
+
+/* Fraser Field Divs */
+
+#field-left {
+	float: left;
+	width: 195px;
+	/*background: green;*/
+
+	padding-top: 10px;
+	padding-left: 45px;
+}
+
+	#field-left img {
+		margin: 9px 0;
+		border: 2px solid black;
+
+	}
+
+#field-right {
+	float: left;
+	width: 680px;
+	background: rgba(255,255,255,.8);
+	background-image: url(../images/fraser-banner.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	padding: 130px 20px 25px;
+	font-size: 18px;
+	padding-bottom: 80px;
+
+}
+
+/* contact divs */
+
+#contact-left {
+	/*float: left;*/
+	width: 450px;
+	height: 185px;
+	background: rgba(255,255,255,.8);
+	margin: 5px;
+	padding: 10px;
+
+}
+
+	#contact-left p {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+#contact-right {
+	float: right;
+	width: 450px;
+	height: 395px;
+	background: rgba(255,255,255,.8);
+	margin-left: 5px;
+	padding: 10px;
+}
+
+	#contact-right p {
+		font-size: 18px;
+	}
+
+	#contact-right input {
+		font-size: 18px;
+	}
+
+	#contact-right h5 {
+		padding-top: 25px;
+	}
+
+#directions {
+	margin-left: 5px;
+	background: rgba(255,255,255,.8);
+	padding: 10px;
+	font-size: 14px;
+}
+
+	#map {
+		float:left;
+		margin-right: 5px;
+	}
+
+/* footer divs */
+
+#footer {
+	width: 1280px;
+	height: 85px;
+	background: url(../images/footer.jpg);
+	background-repeat: no-repeat;
+	margin: 50px auto 0;
+	font-family: 'EraserRegular';
+	color: white;
+	text-align: center;
+	padding-top: 25px;
+	/*padding-left: 200px;*/
+}
+
+#inner-footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+	#footer img {
+		float: left;
+		margin: -15px 20px 0;
+	}
+
+.clr-flt {
+	clear: both;
+}
+
+.orange-bg {
+	background: #D10505;
+	color: white;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.center {
+	text-align: center;
+}
+
+.valign {
+	vertical-align: 20px;
+}
+
+
+#pos {
+	width: 90px;
+	height: 100px;
+	/*background: white;
+	border: 1px solid black;*/
+	position: fixed;
+	left: 50px;
+	top: 300px;
+	padding: 10px 0px 10px 5px;
+	line-height: 24px;
+}
+
+	.pos {
+		width: 90px;
+		margin: 10px 0;
+		text-align: center;
+		border: 1px solid black;
+		background: rgba(255,255,255,.7);
+
+	}
+
+		#pos .pos:hover {
+			background: #D10505;
+		}
+
+		#pos .pos a:hover {
+			text-decoration: none;
+			
+			color: white;
+		}

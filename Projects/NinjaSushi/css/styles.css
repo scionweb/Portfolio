@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Main Layout Divs */
+body {
+	background: tan;
+}
+
+#container {
+	width: 960px;
+	border: 1px solid black;
+	box-shadow: 0 0 5px #222;
+	margin: 0 auto;
+	background: #ddd;
+}
+
+#header {
+	background: white;
+}
+
+	#logo {
+		margin: 0 auto;
+		width: 900px;
+	}
+
+#sidebar {
+	width: 100px;
+	/* height: 400px; remove later */
+	/* background: #ddd; */
+	float: left;
+}
+
+	/* Social Media Links */
+	#fb {
+		background-image: url(../images/fb.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 100px;
+
+	}
+
+		#fb:hover {
+			background-image: url(../images/fb-hover.png);
+		}
+
+	#twitter {
+		background-image: url(../images/twitter.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 80px;
+	}
+
+		#twitter:hover {
+			background-image: url(../images/twitter-hover.png);
+		}
+
+#content {
+	float: left;
+	background: #bbb;
+	background-image: url(../images/creampaper.png);
+	/* height: 400px; 	remove later */
+	width: 820px;
+	padding: 20px 20px;
+}
+
+#footer {
+	padding-top: 10px;
+	clear: both;
+	height: 25px;
+	background: white;
+	background-image: url(../images/ricepaper.png);
+	border-top: 5px solid red;
+}
+
+	#phone {
+		float: left;
+		margin-left: 25px;
+	}
+
+	#email {
+		float: right;
+		margin-right: 25px;
+	}
+
+	#email a {
+		text-decoration: none;
+		color: red;
+	}
+
+	#email a:hover {
+		text-shadow: 0 0 5px black;
+	}
+
+	#copyright {
+		width: 200px;
+		text-align: center;
+		margin: 0 auto;
+
+	}
+
+/* Drop Down Navigation Menu */
+
+#Nav {
+	background: black;
+	border-top: 5px solid red;
+	border-bottom: 2px solid red;
+}
+
+#Nav ul { /*top level */
+	position: relative;
+	list-style: none;
+	border: 1px solid black;
+	display: inline-table;
+	background: black;
+	margin-left: 150px;
+	font-family: "Bradley Hand ITC TT";
+	font-size: 20px;
+}
+
+	#Nav ul:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+	#Nav ul li:hover > ul {
+		display: block;
+	}
+
+	#Nav ul li {
+		float: left;
+	}
+
+	#Nav ul li a {
+		color: white;
+		display: block;
+		text-decoration: none;
+		padding: 10px 40px;
+	}
+
+	#Nav ul li:hover a {
+		background: #333;
+	}
+
+#Nav ul ul { /* second level */
+	display: none;
+	margin-left: 0;
+	position: absolute;
+}	
+
+	#Nav ul ul li {
+		float: none;
+		border-top:1px solid #ccc;
+		border-bottom: 1px solid #666;
+	}
+
+		#Nav ul ul li:hover a {
+			background: #666;
+		}
+
+
+/* Text Styling */
+
+h2 {
+	text-align: center;
+	padding-top: 20px;
+	font-family: "papyrus";
+	font-size: 32px;
+}
+
+h3 {
+	font-family: "papyrus";
+
+}
+
+/* Table styling for Contact Us page */
+
+table.contact {
+	margin-left: 25px;
+}
+
+.contact a {
+	color: red;
+}	
+
+#map {
+	float: right;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+/* IDs for About Us Pages */
+
+#Henri {
+	width: 200px;
+	height: 275px;
+	background: black;
+	margin: 0 25px 25px 0;
+	border:1px solid black;
+	border-radius: 25px;
+	padding-top: 25px;
+	float: left;
+}
+
+#Hina {
+	width: 200px;
+	height: 275px;
+	background: black;
+	margin: 0 25px 25px 0;
+	border:1px solid black;
+	border-radius: 25px;
+	padding-top: 25px;
+	float: right;
+}
+
+#Angus {
+	width: 280px;
+	background: black;
+	margin: 0 25px 25px 0;
+	border:1px solid black;
+	border-radius: 25px;
+	padding-left: 20px;
+	float: left;
+}
+
+/* ID and class for Home page */
+
+.call-left {
+	float: left;
+	width: 250px;
+	padding:5px;
+	
+	border: 3px solid #AD0000;
+	margin-top: 50px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px black;
+	margin-left: 90px;	
+	background: #ddd;
+	text-align: center;
+
+}
+
+#clearfloat { /* for bottom text on Home page */
+	clear:both;
+	text-align: center;
+	padding-top: 25px;
+}
+
+/* classes for Catering and Function pages */
+
+.cater {
+	border: 3px solid #AD0000;
+	padding: 5px;
+	overflow: hidden;
+	text-align: center;
+	margin: 25px 0;
+	border-radius: 5px;
+	box-shadow: 0 0 5px black;
+}
+
+.flt-left {
+	float: left;
+}
+
+.flt-right {
+	float: right;
+}
+
+/* IDs for Gallery page */
+
+#Gallery {
+	width: 400px;
+	margin: 0 auto;
+}
+
+#Gallery img {
+	margin-bottom: 20px;
+	border: 1px solid red;
+	box-shadow: 0 0 5px black;
+}

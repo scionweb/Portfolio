@@ -1,0 +1,209 @@
+<html>
+<head>
+	<title>Voila - Style with Grace</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<script src="js/jQuery.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script src="js/script.js"></script>
+	
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/jquery.carousel.min.js"></script>
+	<!--
+		<script type="text/javascript">
+    		$(document).ready(function(){
+        		$('.carousel').carousel();
+    		});
+		</script> -->
+	<LINK REL="SHORTCUT ICON" HREF="favicon.ico" />
+</head>
+
+<body>
+<div id = "container">
+<div id="blind"><!-- hide scrolling divs --></div>
+<div id = "header">
+	<h1 id="logo">VOIL&#192;</h1>
+	<h2 id="motto">streamline your look with style and <span class="red">grace</span></h2>
+	<div id="nav">
+	<ul>
+		<li><a href="#photo">Photography</a></li>
+		<li><a href="#movie">Movie Wardrobe</a></li>
+		<li><a href="#personal">Personal Stylist</a></li>
+		<li><a href="#album">Photo Album</a></li>
+		<li><a href="#contact">Contact Grace</a></li>		
+	</ul>
+	</div><!-- end Nav -->
+
+</div><!-- end Header -->
+<div id = "content">
+	<div class="focus photo">
+	<div id="photo" class="anchor"></div>
+	<h2>Photography Stylist</h2>
+		<ul>
+			<li>Questions:</li>
+			<li>Are you a model looking for help with your next photo shoot?</li>
+			<li>Are you an agency looking for a stylist to work with your models?</li>
+			<li>Are you a photographer in need of a stylist?</li>
+			<li></li>
+			<li>Answer: <span>Voil&#224;!</span></li>
+		</ul>
+
+		
+
+
+
+
+
+
+	</div><!--end Photo -->
+	
+	<div class="focus movie">
+	<div id="movie" class="anchor"></div>
+	<h2>Movie Stylist</h2>
+		<ul>
+			<li>Questions:</li>
+			<li>Going to an audition and need a period outfit?</li>
+			<li>Need to develop a style for each character?</li>
+			<li>Need to hunt down vintage clothing?</li>
+			<li>Have lots of background extras to dress?</li>
+			<li></li>
+			<li>Answer: <span>Voil&#224;!</span></li>
+		</ul>
+
+
+
+
+
+
+
+	</div><!--end Movie -->
+
+	<div class="focus personal">
+	<div id="personal" class="anchor"></div>
+	<h2>Personal Stylist</h2>
+		<ul>
+			<li>Questions:</li>
+			<li>Do you hate to shop or have no time to shop?</li>
+			<li>Is your closet an unorganized black hole?</li>
+			<li>Do you wonder why you only wear about 10% of what you own?</li>
+			<li>Are you going back to work and in need of a work wardrobe?</li>
+			<li>Are you searching for the perfect outfit for a special event?</li>
+			<li>Do you want to walk out the door every day feeling confident?</li>
+			<li></li>
+			<li>Answer: <span>Voil&#224;!</span></li>
+		</ul>
+
+
+
+
+
+	</div><!--end Personal -->
+
+
+	<div class="carousel">
+	<div id="album" class="anchor"></div>
+		<div class="slides">
+			<div>
+				<a>
+					<img src="images/photos/photo1.jpg">
+				</a>
+			</div>
+			<div>
+				<a>
+					<img src="images/photos/photo2.jpg">
+				</a>
+			</div>
+			<div>
+				<a>
+					<img src="images/photos/photo3.jpg">
+				</a>
+			</div>
+			<div>
+				<a>
+					<img src="images/photos/photo4.jpg">
+				</a>
+			</div>
+			<div>
+				<a>
+					<img src="images/photos/photo5.jpg">
+				</a>
+			</div>
+			<div>
+				<a>
+					<img src="images/photos/photo6.jpg">
+				</a>
+			</div>
+			<div>
+				<a>
+					<img src="images/photos/photo7.jpg">
+				</a>
+			</div>
+			<div>
+				<a>
+					<img src="images/photos/photo8.jpg">
+				</a>
+			</div>
+			<div>
+				<a>
+					<img src="images/photos/photo9.jpg">
+				</a>
+			</div>
+
+		</div><!--end Slides-->
+	</div><!--end Carousel-->
+
+
+	<div class="focus contact">
+	<div id="contact" class="anchor"></div>
+	<h2>Contact Information</h2>
+	<h3>Grace McDade Babikian</h3>
+	<br />
+	<h3>Phone: 978.430.9889</h3>
+	<!-- <br />
+	<h3>E-Mail: grace.voila@gmail.com</h3> -->
+	<br />
+	<a href="mailto:grace.voila@gmail.com"><img src="images/email.png"></a>
+	<a href="http://www.facebook.com/Voilagrace"><img src="images/facebook.png"></a>
+	<a href="http://www.linkedin.com/profile/view?id=49023747&locale=en_US&trk=tyah"><img src="images/linkedin.png"></a>
+	<br /><br />
+	<p>Please use this form if you would like Grace to contact you.</p>
+
+
+	<form id="contact_form" method="post" action="contact.php">
+		<input type='text' name='name' placeholder="Name" size="30">*
+		<br /><br />
+		<input type='text' name='email' placeholder="E-Mail Address" size="30">*
+		<br /><br />
+		<input type='text' name='phone' placeholder="Telephone Number">
+		<br /><br />
+		<input type="text" name="block" style="display:none">
+		<!-- Which styling services are you interested in?<br />
+		<input type='radio' name='service' value='photographer'> Photography (Photographer)<br />
+		<input type='radio' name='service' value='model'> Photography (Model)<br />
+		<input type='radio' name='service' value='movie'> Movie Wardrobe<br />
+		<input type='radio' name='service' value='personal'> Personal<br />
+		<br /> -->
+		What do you feel you need help with?<br />
+		<textarea name='details' rows='5' cols='50'></textarea>
+		<br /><br />
+		When is the best time to reach you?<br />
+		<input type='radio' name='best' value='morning'> Morning &nbsp
+		<input type='radio' name='best' value='afternoon'> Afternoon &nbsp
+		<input type='radio' name='best' value='evening'> Evening
+		<br /><br />
+		<input type="submit" value='&nbsp Send &nbsp' onclick="return isValid( this.form );">
+		<input type="reset" value='&nbsp Reset Form &nbsp'>
+	</form>
+
+
+	</div><!-- end Contact -->
+
+</div><!--end Content -->
+<div id = "footer">
+&copy; 2013 Voila
+</div><!--end Footer -- >
+
+
+</div><!--end Container -->
+</body>
+</html>

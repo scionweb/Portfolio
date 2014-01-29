@@ -1,0 +1,464 @@
+@import url(http://fonts.googleapis.com/css?family=Croissant+One);
+@import url(http://fonts.googleapis.com/css?family=Monda:400,700);
+
+body {
+	font-family: "Monda";
+	/* font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif; */
+	margin: 0;
+	padding: 0;
+	color: #000;
+	/* background-image: url(../images/body_bg.png); */
+	background-image: url(../images/offshoot.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-attachment: fixed;
+
+	/* background-color: #6B4226; */
+	/* background-image: url(gradient_bg.png);
+	background-repeat: repeat-x; */
+}
+
+
+/* ~~ Element/tag selectors ~~ */
+
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+	
+a img { /* remove blue border if image is a link */
+	border: none;
+}
+
+h1, h2, h3 {
+	font-family: "Croissant One";
+	color: white;
+}
+
+/* Navigation - CSS Drop Down Menu */
+
+#nav ul {
+	display: inline-table;
+	font-family: "Croissant One";
+	font-size: 16px;
+	list-style: none;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+	#nav ul:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+#nav a {
+	color: white;
+}
+
+
+
+#nav ul ul {
+	display: none;
+	font-family: arial;
+	font-size: 14px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+}
+
+	#nav ul li:hover > ul {
+		display: block;
+	}
+
+#nav ul li {
+	float: left;
+}
+
+	#nav ul li a:hover {
+		color: darkgreen;
+		text-shadow: 0 0 10px black;
+	}
+
+#nav ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 5px 40px 0px 0px;
+}
+
+#nav ul ul li {
+	background: #888;
+	border-radius: 15px;
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	float: none;
+	position: relative;
+	margin-top: 3px;
+	padding: 2px 0 5px 20px;
+
+}
+
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline;
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+
+/* ~~ This fixed width container surrounds all other divs ~~ */
+.container {
+	width: 960px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	background: #f5f5f5;
+	border-left: 1px solid #444;
+	border-right: 1px solid #444;
+}
+
+/* ~~ The header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo. ~~ */
+.header {
+	margin: 0px;
+	padding: 10px 10px 0px 10px;
+	background-image: url(../images/gradient_bg2_150.png);
+	background-repeat: repeat-x;
+	border: 1px solid #ddd;
+	border-top: 0px;
+	box-shadow: 0 0 3px 3px #999;
+	position: relative;
+	z-index: 3;
+}
+
+.header p {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: right;
+	font-style: italic;
+	margin-right: 10px;
+	padding-top: 12px;
+	line-height: 36px;
+}
+
+.header span {
+	font-size: 20px;
+	font-style: normal;
+}
+
+
+/* ~~ These are the columns for the layout. ~~ 
+
+
+/* .sidebar1 {
+	float: left;
+	width: 180px;
+	background: #ddd;
+	padding-bottom: 10px;
+} */
+
+.content {
+	background: #f5f5f5;
+	padding: 10px 20px 10px 0;
+	width: 739px;
+	border-right: 1px solid black;
+	float: left;
+	position: relative;
+	z-index: 2;
+}
+.sidebar {
+	/* background-image: url(../images/offshoot.png);
+	background-repeat: no-repeat; */
+	float: left;	
+	width: 200px;
+	min-height: 350px;
+	padding: 10px 0;
+}
+
+.sidebar img {
+	margin-left: 35px;
+	margin-bottom: 25px;
+}
+
+
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+
+/* ~~ The footer styles ~~ */
+.footer {
+	font-size: 14px;
+	border: 1px solid #ddd;
+	border-bottom: 0px;
+	box-shadow: 0 0 3px 2px #999;
+	text-align: center;
+	padding: 20px 0 5px 0;
+	background: #888;
+	background-image: url(gradient_bg_120.png);
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	z-index: 3;
+}
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the .container) if the .footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/* below is the ribbon to wrap the top of a div */
+
+
+.round-corners {
+	margin: 10px auto 0 auto;
+	width: 700px;
+	background: darkgreen;
+  	border-radius: 30px;
+  	text-align: center;
+  	text-shadow: rgba(0,0,0,0.5) -2px 2px 5px;
+  	-webkit-box-shadow: -2px 2px 5px rgba(0,0,0,0.5);
+  	-moz-box-shadow:    -2px 2px 5px rgba(0,0,0,0.5);
+  	box-shadow:         -2px 2px 5px rgba(0,0,0,0.5); 
+}
+
+.ribbon-grey {
+  font: bold 15px Sans-Serif;
+  color: #333; /* if not overridden by an element style */
+  text-align: center;
+  text-shadow: rgba(0,100,0,0.5) 3px 3px 3px;
+  position: relative;
+  padding-bottom: 0px;
+  left: -8px;
+  top: 10px;
+  width: 775px;
+  background-color: #4c4742;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c4742), to(#696969)); 
+  background-image: -webkit-linear-gradient(top, #4c4742, #696969); 
+  background-image:    -moz-linear-gradient(top, #4c4742, #696969); 
+  background-image:     -ms-linear-gradient(top, #4c4742, #696969); 
+  background-image:      -o-linear-gradient(top, #4c4742, #696969);
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+  .ribbon-grey:before {
+  content: "";
+  border-top:   3px solid transparent;   
+  border-left:  8px solid #444;
+  border-bottom: 8px solid transparent;
+  position:absolute;
+  bottom: -8px;
+}
+
+ .ribbon-grey:after {
+  content: "";
+  border-top:   3px solid transparent;   
+  border-right:  8px solid #333;
+  border-bottom: 8px solid transparent;
+  position:absolute;
+  bottom: -8px;
+}
+
+ .ribbon-grey:before {
+  right: 0;
+}
+.ribbon-grey:after {
+  left: 0;
+}
+
+.featured1 {
+	width: 325px;
+	height: 220px; /* temporary */
+	background: white;
+	border: 1px solid black;
+	margin: 20px 20px 20px 30px;
+	-webkit-box-shadow: -2px 2px 5px rgba(0,0,0,0.5);
+  	-moz-box-shadow:    -2px 2px 5px rgba(0,0,0,0.5);
+  	box-shadow:         -2px 2px 5px rgba(0,0,0,0.5);
+	float: left;
+	font-size: 16px;
+}
+
+.featured2 {
+	width: 325px;
+	height: 220px; /* temporary */
+	background: white;
+	border: 1px solid black;
+	margin: 20px 10px 20px 20px;
+	-webkit-box-shadow: -2px 2px 5px rgba(0,0,0,0.5);
+  	-moz-box-shadow:    -2px 2px 5px rgba(0,0,0,0.5);
+  	box-shadow:         -2px 2px 5px rgba(0,0,0,0.5);
+	float: right;
+}
+
+.featured1 a, .featured2 a {
+	text-decoration: none;
+}
+
+.featured1 p:first-letter, .featured2 p:first-letter {
+	font-family: "Croissant One";
+	font-size: 30px;
+	font-weight: bold;
+	color: darkgreen;
+}
+
+.ribbon-featured {
+  font: bold 15px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(0,100,0,0.5) 3px 3px 3px;
+  position: relative;
+  padding-bottom: 0px;
+  left: -8px;
+  top: 10px;
+  width: 342px;
+  background-color: #4c4742;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c4742), to(#696969)); 
+  background-image: -webkit-linear-gradient(top, #4c4742, #696969); 
+  background-image:    -moz-linear-gradient(top, #4c4742, #696969); 
+  background-image:     -ms-linear-gradient(top, #4c4742, #696969); 
+  background-image:      -o-linear-gradient(top, #4c4742, #696969);
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+  .ribbon-featured:before {
+  content: "";
+  border-top:   3px solid transparent;   
+  border-left:  8px solid #444;
+  border-bottom: 8px solid transparent;
+  position:absolute;
+  bottom: -8px;
+}
+
+ .ribbon-featured:after {
+  content: "";
+  border-top:   3px solid transparent;   
+  border-right:  8px solid #333;
+  border-bottom: 8px solid transparent;
+  position:absolute;
+  bottom: -8px;
+}
+
+ .ribbon-featured:before {
+  right: 0;
+}
+.ribbon-featured:after {
+  left: 0;
+}
+
+.package {
+	width: 300px;
+	height: 250px; /* temporary */
+	background: white;
+	border: 1px solid black;
+	margin: 5px 10px 30px 20px;
+	padding: 5px;
+	box-shadow: -2px 2px 5px grey;
+	float: right;
+	position: relative;
+
+}
+
+.ribbon-wrapper-green {
+    width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -5px;
+  right: -4px;
+}
+
+.ribbon-green {
+  font: bold 15px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #BFDC7A;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
+  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); 
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+
+.ribbon-green:after {
+  right: 0;
+}
+
+.compare {
+	
+	background-color: white;
+	border-collapse: collapse;
+	margin: 0 auto;
+	line-height: 2;
+}
+
+.compare td {
+	border:	1px solid black;
+	padding: 5px 10px;
+}
+
+.table-header {
+	color: darkgreen;
+	font-weight: bold;
+	background: #888;
+}
+
+.asterisk {
+	font-weight: bold;
+	font-size: 10pt;
+	margin-left: 55px;
+}
